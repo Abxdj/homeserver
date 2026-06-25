@@ -8,7 +8,7 @@ A self-hosted home server running on an HP Pavilion laptop with Ubuntu Server 24
 |---|---|
 | CPU | Intel Core i5 |
 | RAM | 8GB |
-| Storage | 1TB SSD |
+| Storage | 1TB |
 | GPU | NVIDIA GeForce 940MX (2GB VRAM) |
 | OS | Ubuntu Server 24.04.4 LTS |
 
