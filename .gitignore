@@ -1,0 +1,14 @@
+# Environment files with secrets
+.env
+
+# Docker runtime data
+**/data/
+**/letsencrypt/
+**/logs/
+**/cache/
+**/db/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

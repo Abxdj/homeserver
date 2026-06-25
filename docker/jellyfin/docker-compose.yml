@@ -1,0 +1,20 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    ports:
+      - "8096:8096"
+    environment:
+      - JELLYFIN_PublishedServerUrl=http://${SERVER_LOCAL_IP}:8096
+    volumes:
+      - ~/docker/jellyfin/config:/config
+      - ~/docker/jellyfin/cache:/cache
+      - /mnt/storage/media:/media
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu, video]

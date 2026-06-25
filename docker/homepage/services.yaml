@@ -1,0 +1,55 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Media:
+    - Jellyfin:
+        href: http://192.168.29.33:8096
+        description: Media Server
+        icon: jellyfin.png
+    - Radarr:
+        href: http://192.168.29.33:7878
+        description: Movies
+        icon: radarr.png
+    - Sonarr:
+        href: http://192.168.29.33:8989
+        description: TV Shows
+        icon: sonarr.png
+    - qBittorrent:
+        href: http://192.168.29.33:8090
+        description: Torrents
+        icon: qbittorrent.png
+    - Prowlarr:
+        href: http://192.168.29.33:9696
+        description: Indexers
+        icon: prowlarr.png
+
+- Files & Photos:
+    - Nextcloud:
+        href: http://192.168.29.33:8080
+        description: Personal Cloud
+        icon: nextcloud.png
+    - Immich:
+        href: http://192.168.29.33:2283
+        description: Photo Backup
+        icon: immich.png
+
+- AI & Tools:
+    - Open WebUI:
+        href: http://192.168.29.33:3000
+        description: Local AI
+        icon: ollama.png
+
+- Network & System:
+    - Pi-hole:
+        href: http://192.168.29.33:8053
+        description: Ad Blocking
+        icon: pi-hole.png
+    - Portainer:
+        href: http://192.168.29.33:9000
+        description: Docker
+        icon: portainer.png
+    - Nginx Proxy Manager:
+        href: http://192.168.29.33:81
+        description: Reverse Proxy
+        icon: nginx-proxy-manager.png
